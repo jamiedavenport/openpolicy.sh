@@ -3,13 +3,15 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import vercel from "@astrojs/vercel";
 import icon from "astro-icon";
+import sitemap from "@astrojs/sitemap";
 
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://openpolicy.sh",
   adapter: vercel(),
-  integrations: [icon()],
+  integrations: [icon(), sitemap()],
 
   experimental: {
     fonts: [

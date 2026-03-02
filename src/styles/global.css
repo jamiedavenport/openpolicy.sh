@@ -3,3 +3,7 @@
 @theme inline {
     --font-mono: var(--font-geist-mono);
 }
+
+code {
+    font-size: inherit;
+}

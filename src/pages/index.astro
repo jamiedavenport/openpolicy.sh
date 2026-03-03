@@ -9,6 +9,8 @@ import Nav from "../components/nav.astro";
 
 import Lucid from "../assets/lucid.svg";
 
+const installCmd = `bunx @openpolicy/cli@latest init`;
+
 const policyTs = `import { definePrivacyPolicy } from '@openpolicy/sdk'
 
 export default definePrivacyPolicy({
@@ -138,12 +140,18 @@ Output only a single policy.ts using definePrivacyPolicy(). No explanations.`;
           <h2 class="font-mono font-medium text-xs text-gray-500 mb-2">
             README.md
           </h2>
-          <p>
+          <p class="mb-4">
             Create legal policies the way developers build software. Our
             platform lets you generate privacy policies, terms of service, and
             other legal agreements directly from code—making them fast,
             accurate, and easy to maintain.
           </p>
+          <Code 
+            code={installCmd}
+            lang="bash"
+            theme="github-light"
+            class="p-4 text-sm border border-gray-200 bg-gray-100"
+          />
         </section>
 
         <section>

@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate:policy": "openpolicy generate privacy.config.ts --out ./src/policies"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
@@ -16,5 +17,11 @@
     "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@openpolicy/cli": "^0.0.5",
+    "@openpolicy/core": "^0.0.4",
+    "@openpolicy/sdk": "^0.0.4",
+    "@tailwindcss/typography": "^0.5.19"
   }
 }

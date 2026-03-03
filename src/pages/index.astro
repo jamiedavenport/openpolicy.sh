@@ -8,6 +8,7 @@ import Header from "../components/header.astro";
 import Nav from "../components/nav.astro";
 
 import Lucid from "../assets/lucid.svg";
+import virentis from "../assets/virentis.png";
 
 const installCmd = `bunx @openpolicy/cli@latest init`;
 
@@ -288,7 +289,9 @@ Output only a single policy.ts using definePrivacyPolicy(). No explanations.`;
             <a href="https://lucid.jxd.dev" class="bg-white p-4 hover:bg-gray-50 transition-colors flex items-center justify-center" target="_blank">
               <Lucid class="h-5" />
             </a>
-            <div class="bg-white p-4"></div>
+            <a href="https://www.virentis.uk/" class="bg-white p-4 hover:bg-gray-50 transition-colors flex items-center justify-center" target="_blank">
+              <img src={virentis.src} alt="Virentis" class="h-8" />
+            </a>
             <div class="bg-white p-4"></div>
         </section>
 

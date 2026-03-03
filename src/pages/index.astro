@@ -3,10 +3,11 @@ import "../styles/global.css";
 
 import { Font } from "astro:assets";
 import { Code } from "astro:components";
-import { Icon } from "astro-icon/components";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import Nav from "../components/nav.astro";
+
+import Lucid from "../assets/lucid.svg";
 
 const policyTs = `import { definePrivacyPolicy } from '@openpolicy/sdk'
 
@@ -268,6 +269,19 @@ Output only a single policy.ts using definePrivacyPolicy(). No explanations.`;
               class="p-4 text-sm"
             />
           </div>
+        </section>
+
+        <section>
+          <h2 class="font-mono font-medium text-xs text-gray-500 mb-2">
+            SHOWCASE.md
+          </h2>
+          <p class="mb-4">These teams are using OpenPolicy to generate their legal documentation and streamline their development process</p>
+          <div class="grid grid-cols-3 gap-px bg-gray-200 border border-gray-200">
+            <a href="https://lucid.jxd.dev" class="bg-white p-4 hover:bg-gray-50 transition-colors flex items-center justify-center" target="_blank">
+              <Lucid class="h-5" />
+            </a>
+            <div class="bg-white p-4"></div>
+            <div class="bg-white p-4"></div>
         </section>
 
         <Footer />
